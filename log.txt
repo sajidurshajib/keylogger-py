@@ -1,8 +1,0 @@
-
-[shift]
-Hello 
-[shift]
-World.. 
-[ctrl]
-s
-[esc]
